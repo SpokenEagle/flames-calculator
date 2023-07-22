@@ -4,6 +4,9 @@ function checkInput() {
     if (n==="" || m===""){
         alert("Please enter both the names");
     }
+    else if(n===m){
+        alert("Please enter different names");
+    }
     else{
         findFlames();
     }
