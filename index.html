@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flames Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js">
+    </script>
+</head>
+<body>
+<div class="heading_">
+    <h1>Flames Calculator</h1>
+</div>
+<div class="inputSection">
+
+<!--        <label for="person1">Person 1</label>-->
+    <input type="text" name="person1" id="person1"  placeholder="Name 1" autofocus >
+
+    <br><br>
+<!--    <label for="person2">Person 2</label>-->
+    <input type="text" name="person2" id="person2" placeholder="Name 2">
+    <script>
+        document.getElementById("person2").addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("calculate").click();
+            }
+        });
+        document.getElementById("person1").addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("calculate").click();
+            }
+        });
+    </script>
+
+
+    <br><br>
+    <div>
+        <button id="calculate" class="calculate" onclick="checkInput();">Calculate</button>
+
+
+        <button id="reset" class="reset" onclick="resetStuff();">Reset</button>
+    </div>
+</div>
+<div class="resultDiv">
+    <h1 id="result"></h1>
+</div>
+</body>
+</html>
