@@ -33,7 +33,7 @@ body{
     color: #000000;
 }
 button{
-background-color: #4CAF50;
+    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0px;
@@ -89,4 +89,36 @@ h2{
     color: white;
     font-variant: small-caps;
     text-align: center;
+}
+
+/*For small screens*/
+@media screen and (max-width: 700px) {
+    .inputSection input[type=text]{
+        margin: 0;
+    }
+    button{
+        padding: 0;
+        margin: 0;
+    }
+    .inputSection {
+        width: 80%;
+        /*border: none;*/
+    }
+
+
+    .calculate, .reset {
+
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .reset {
+        float: none;
+    }
+    .heading_{
+        margin-top: 10%;
+    }
+    body{
+        background-position: 65%;
+    }
 }
