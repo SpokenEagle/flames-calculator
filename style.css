@@ -20,6 +20,7 @@
     box-sizing: border-box;
     color: blue;
     font-size: 25px;
+    opacity: 0.95;
 }
 
 body{
