@@ -101,28 +101,34 @@ function findFlames(n,m,unique){
     console.log("----------------");
     if (game === "F") {
         console.log("Friends.");
-        finalText += "Friends.";
+        // finalText += "Friends.";
+        finalText += "Friends🫂";
 
     }
     else if(game === "L") {
         console.log("Love.");
-        finalText += "Love.";
+        // finalText += "Love.";
+        finalText += "Love ❤";
     }
     else if(game === "A") {
         console.log("Affection.");
-        finalText += "Affection.";
+        // finalText += "Affection.";
+        finalText += "Affection 🥰";
     }
     else if(game === "M") {
         console.log("Marriage.");
-        finalText += "Marriage.";
+        // finalText += "Marriage.";
+        finalText += "Marriage  💍";
     }
     else if(game === "E") {
         console.log("Enemy.");
-        finalText += "Enemy.";
+        // finalText += "Enemy.";
+        finalText += "Enemy ⚔️";
     }
     else if(game === "S") {
         console.log("Sister.");
-        finalText += "Sister.";
+        // finalText += "Sister.";
+        finalText += "Sister 👫";
     }
 
     document.getElementById("result").innerHTML = finalText;
