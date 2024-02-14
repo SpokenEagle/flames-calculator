@@ -91,7 +91,9 @@ h2{
     font-variant: small-caps;
     text-align: center;
 }
-
+#result{
+    margin-bottom: 0;
+}
 /*For small screens*/
 @media screen and (max-width: 700px) {
     .inputSection input[type=text]{
